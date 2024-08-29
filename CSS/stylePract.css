@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
+/*Header*/
+
 * {
     margin: 0;
     padding: 0;
@@ -169,69 +171,4 @@ h1::before{
 
 h1::after {
     right: -140px;
-}
-
-/* Párrafo */
-
-/* Inicio de Tarjetas*/
-
-.container{
-    position: relative;
-    width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    margin-top: 300px;
-}
-
-.container .tarjeta{
-    position: relative;
-    max-width: 300px;
-    height: 175px;
-    background: wheat;
-    margin: 30px 15px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 3px 50px rgb(0,0,0,0.5);
-    transition: 0.4s ease-in-out;
-}
-
-.container .tarjeta:hover{
-    height: 450px;
-}
-
-.container .tarjeta .cimg{
-    position: relative;
-    width: 260px;
-    height: 200px;
-    top: -60px;
-    left: 4px;
-    z-index: 1;
-    box-shadow:  0 3px 50px rgb(0,0,0,0.5);
-}
-
-.container .tarjeta .cimg img{
-    max-width: 100%;
-    height: 100%;
-    border-radius: 6px;
-}
-
-.container .tarjeta .detalles{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color: black;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
-}
-
-.container .tarjeta:hover .detalles{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -25px;
 }
